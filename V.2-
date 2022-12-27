@@ -1,0 +1,18 @@
+if game.PlaceId == 6284583030 then 
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("BLAKE SCRIPTHUB (", "SentinelTheme")
+local Main = Window:NewTab("Main")
+local AutoFarmSection = AutoFarm:NewSection("AutoFarm")
+AutoFarmSection:NewButton("AutoFarm", "OP AUTOFARM", function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-WD/SCRIPTHUB/main/Main.Lua"))()
+end
+
+local Dupe = Window:NewTab("Dupe")
+local DupeSection = Dupe:NewSection("Dupe")
+
+DupeSection:NewButton("OP DUPE", "OP DUPE SCRIPT", function()
+ loadstring(game:HttpGet("https://raw.githubusercontent.com/Project-WD/SCRIPTHUB/main/Main.Lua"))()
+end)
+
+
+
