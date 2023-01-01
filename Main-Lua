@@ -1,0 +1,183 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Player = Game.Players.LocalPlayer
+local Window = OrionLib:MakeWindow({Name = "[TITANIC] Pet Simulator | Seth-Script v2", HidePremium = false, SaveConfig = true, IntroText = "Dupe Hub", IntroEnabled = true})
+ 
+--tabs
+local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--toggls
+Tab:AddLabel("Reminder: If It's Not Working, Then Re-execute!")
+Tab:AddLabel("Duping Section")
+
+Tab:AddToggle({
+	Name = "Super Dupe | Gems ",
+	Default = false,
+	Callback = function(Value)
+ 
+end    
+})
+
+Tab:AddTextbox({
+	Name = "Gem Amount",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+Tab:AddToggle({
+	Name = "Normal Dupe | Pets ",
+	Default = false,
+	Callback = function(Value)
+ 
+end    
+})
+
+Tab:AddSlider({
+	Name = "Pet Amount",
+	Min = 0,
+	Max = 20,
+	Default = 2,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Pets",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+ Tab:AddToggle({
+	Name = "Anti-Staff | Kicks You If Staff in Server",
+	Default = false,
+	Callback = function(Value)
+ 
+end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Trade Scam",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("Trading Section")
+ 
+Tab:AddToggle({
+	Name = "Scam Trade | Put Without this then Turn on and Remove",
+	Default = false,
+	Callback = function(Value)
+ 
+end    
+})
+
+ Tab:AddTextbox({
+	Name = "AutoRemove | Amount Of Pets u Want To Remove",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+Tab:AddToggle({
+	Name = "Disconnect Player InTrade | Use When 2.0s complete",
+	Default = false,
+	Callback = function(Value)
+end    
+})
+
+local Tab = Window:MakeTab({
+	Name = "Booth Scam",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("Booth Section")
+
+Tab:AddToggle({
+	Name = "Fast Buy | It Does What it Says ",
+	Default = false,
+	Callback = function(Value)
+ 
+end    
+})
+
+Tab:AddToggle({
+	Name = "Lag Booth | It Does What it Says ",
+	Default = false,
+	Callback = function(Value)
+ 
+end    
+})
+
+Tab:AddTextbox({
+	Name = "Lag Ping (Recommended 700-1000)",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		print(Value)
+	end	  
+})
+
+local Tab = Window:MakeTab({
+	Name = "Farm",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+Tab:AddLabel("Farming Section")
+ 
+Tab:AddToggle({
+	Name = "Super Farm | May kick ",
+	Default = false,
+	Callback = function(Value)
+ 
+end  
+  
+})
+ Tab:AddSlider({
+	Name = "Speed (Recommended 0.9)",
+	Min = 0,
+	Max = 9,
+	Default = 0.9,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 0.1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+Tab:AddToggle({
+	Name = "Normal Farm | Auto Farm",
+	Default = false,
+	Callback = function(Value)
+ 
+end    
+})
+ 
+Tab:AddToggle({
+	Name = "Near Farm | Farms Near You (Yup)",
+	Default = false,
+	Callback = function(Value)
+ 
+end    
+})
+ 
+local Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+}) 
+
+Tab:AddLabel("SethScript")
+
+Tab:AddLabel("SethScript")
+ 
+Tab:AddLabel("Seth")
+
+wait(25)
